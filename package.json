@@ -3,6 +3,7 @@
   "private": true,
   "type": "commonjs",
   "scripts": {
+    "test": "npm run test-babel && npm run test-ts-node",
     "test-babel": "mocha --require ./babel-register 'test/**/*.test.ts'",
     "test-ts-node": "mocha --require ts-node/register 'test/**/*.test.ts'"
   },
